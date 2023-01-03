@@ -1,0 +1,24 @@
+<main>
+    <mat-card>
+        <mat-card-content>
+            <button mat-raised-button color="primary" (click)="counter()">Add One</button>
+            <mat-form-field appearance="outline">
+                <input 
+                    matInput 
+                    [placeholder]="count" 
+                    [value]="count"
+                    type="text" 
+                    readonly
+                >
+            </mat-form-field>
+            <mat-card-actions align="end">
+                <button mat-raised-button color="warn" class="btn-reset" (click)="count = 0" (click)="resetAlert()">Reset</button>
+            </mat-card-actions>
+        </mat-card-content>
+    </mat-card>
+    
+    <p><span>You can visit the same project without angular material <a href="html">here.</a></span></p>
+    <span>Doing some tutorials from <a href="https://angular.io/" target="_blank">Angular documentation</a></span>
+    <span>Made by Bryan Lima</span>
+
+</main>
